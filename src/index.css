@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #282726;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+.main-container{
+   margin: 0 auto;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.header-container h1{
+    font-size: 1.5rem;
+    color: #F9F4DA;
+}
+
+.header-container p{
+    color: #F9F4DA;
+    font-size: 1rem;
+}
+
+.animals-span{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    justify-content: center;
+    gap: 4px;
+}
+
+.span-container{
+    padding: 0.3em;
+    border-radius: 4px;
+}
+
+.letters-container{
+    margin-top: 4em;
+    display: flex;
+    gap: 5px;
+}
+
+.letter-span{
+   padding: 0.9em;
+   background-color: #323232;
+   border-bottom: 2px solid #F9F4DA;
+   color: white;
+   font-weight: bold;
+}
+
+
+.key-container{
+display: flex;
+ flex-wrap: wrap;
+gap: 5px;
+justify-content: center;
+max-width: 98vw;
+margin-top: 3em;
+margin-bottom: 0.5em;
+
+}
+
+.key-btn{
+    padding: 1em 1.2em;
+    background-color: #FCBA29;
+    border: 1px solid #D7D7D7;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.key-btn:hover, :focus{
+    background-color: white;
+}
+
+section.key-container > button.correct{
+    background-color: green;
+}
+
+section.key-container >  button.wrong{
+    background-color: red;
+}
+
+
+section.animals-span > span.animalKill{
+    opacity: 0.5;
+    content: "Killed";
+    background-color: black;
+}
+
+section.animals-span > span.animalKill::before{
+
+    content: "Killed";
+
+}
+
+section.game-status h3{
+     font-weight: bold;
+     margin-bottom: 0;
+}
+
+section.game-status p{
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.lost-status{
+    background-color: #BA2A2A;
+    color: #F9F4DA;
+    padding: 0.3em 0.5em;
+    margin-bottom: 2em;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.win-status{
+    background-color: #10A95B;
+    color: #F9F4DA;
+    padding: 0.3em 0.5em;
+    margin-bottom: 2em;
+    border-radius: 7px;
+    text-align: center;
+}
+
+section.letters-container > span.redText{
+    color: red;
+}
+
+button.new-btn{
+    padding: 0.7em;
+    margin-top: 2em;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
